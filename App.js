@@ -25,7 +25,7 @@ const taskList = [
   },{
     id: 6,
     task: "Lavar auto",
-    completed: false
+    completed: true
   },{
     id: 7,
     task: "Hacer ejercicios",
