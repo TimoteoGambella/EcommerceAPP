@@ -5,6 +5,7 @@ export default function RenderTask({list,setTaskActive,setModalVisible}){
         <View style = {styles.view3}>
             <FlatList 
                 data={list}
+                showsHorizontalScrollIndicator={false}
                 renderItem={({item})=>{
                     return(
                         <Pressable onPress={()=>{

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, Button,TouchableOpacity,FlatList, Pressable } from 'react-native'
+import { StyleSheet, Text, View, Keyboard } from 'react-native'
 import React, { useState } from 'react'
 import RenderTask from '../components/ListTasks'
 import ModalMain from '../components/ModalMain'
@@ -19,6 +19,8 @@ const MainScreen = ({taskList}) => {
             task: input,
             completed:false
         }])
+        Keyboard.dismiss()
+        setInput("")
     }
 
     return (
